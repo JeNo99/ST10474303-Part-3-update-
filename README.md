@@ -34,7 +34,7 @@ Organization: Sham Schawarma and grill
 Industry: Hospitality
 Location: 295 Florida road, Florida Fields, Windermere, Berea, Durban, 4001
  Website status: New development required 
-Website published on: https://github.com/JeNo99/ST10474303-Part-3 
+Website published on: https://github.com/JeNo99/ST10474303-Part-3-update- 
 
 BRIEF HISTORY 
 In order to provide the neighborhood with real Middle Eastern food, Sham Shawarma and Grill was established. The restaurant, which draws influence from Palestinian and Jordanian customs, is well-known for its grilled food, freshly cooked shawarmas, and welcoming ambiance. Because of its dedication to quality, affordability, and only halaal products, it has garnered a devoted following over time. 
