@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery of Sham Shawarma & Grill — our food, restaurant, and events.">
+  <meta name="robots" content="index, follow">
+  <title>Gallery | Sham Shawarma &amp; Grill</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header>
+    <img src="images/shamlogo2.png" alt="Sham Shawarma & Grill Logo" width="80" height="80">
+    <h2>SHAM SHAWARMA &amp; GRILL</h2>
+    <p>Authentic Middle Eastern Cuisine</p>
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="inquiry.html">Inquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="about-hero" aria-label="Gallery hero">
+      <h1>Our Gallery</h1>
+      <p>A visual feast — click any image to view it full size</p>
+    </section>
+
+    <!-- GALLERY FILTER -->
+    <section aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading" style="color:var(--orange);margin-bottom:14px;">Food &amp; Restaurant</h2>
+
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;">
+        <button class="filter-btn active" data-gallery-filter="all">All</button>
+        <button class="filter-btn" data-gallery-filter="shawarma">Shawarma</button>
+        <button class="filter-btn" data-gallery-filter="platters">Platters</button>
+        <button class="filter-btn" data-gallery-filter="drinks">Drinks</button>
+        <button class="filter-btn" data-gallery-filter="restaurant">Restaurant</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid" role="list" aria-label="Food photo gallery">
+
+        <div class="gallery-item" data-gallery-cat="shawarma" data-caption="Chicken Shawarma Wrap" role="listitem">
+          <img src="images/image1f.jpg" alt="Chicken Shawarma Wrap" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="shawarma" data-caption="Chicken in a Pita" role="listitem">
+          <img src="images/image16f.jpg" alt="Chicken in a Pita" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="shawarma" data-caption="Chicken Single Meal" role="listitem">
+          <img src="images/image12f.jpg" alt="Chicken Single Meal" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="shawarma" data-caption="Falafel Wrap" role="listitem">
+          <img src="images/image21.jpg" alt="Falafel Wrap" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="platters" data-caption="Chicken Hummus & Shawarma Platter" role="listitem">
+          <img src="images/image7f.jpg" alt="Chicken Hummus & Shawarma Platter" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="platters" data-caption="Beef Hummus & Shawarma Platter" role="listitem">
+          <img src="images/image14f.jpg" alt="Beef Hummus & Shawarma Platter" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="platters" data-caption="Six Piece Falafel Platter" role="listitem">
+          <img src="images/image9f.jpg" alt="Six Piece Falafel Platter" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="platters" data-caption="BBQ Platter for Two" role="listitem">
+          <img src="images/image3f.jpg" alt="BBQ Platter for Two" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="platters" data-caption="Family BBQ Platter" role="listitem">
+          <img src="images/image19f.jpg" alt="Family BBQ Platter" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="platters" data-caption="Hummus" role="listitem">
+          <img src="images/image23f.jpg" alt="Hummus" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="platters" data-caption="Babaganoush" role="listitem">
+          <img src="images/image8f.jpg" alt="Babaganoush" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="platters" data-caption="Five Piece Baklava" role="listitem">
+          <img src="images/image6f.jpg" alt="Five Piece Baklava" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="drinks" data-caption="Lemon & Mint Drink" role="listitem">
+          <img src="images/image17d.jpg" alt="Lemon & Mint Drink" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="drinks" data-caption="Avo, Dates & Almonds Shake" role="listitem">
+          <img src="images/image20d.jpg" alt="Avo, Dates & Almonds Shake" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="drinks" data-caption="Chocolate Milkshake" role="listitem">
+          <img src="images/image22d.jpg" alt="Chocolate Milkshake" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="restaurant" data-caption="Chocolate Milkshake" role="listitem">
+          <img src="images/image2.jpg" alt="Chocolate Milkshake" loading="lazy">
+        </div>
+        <div class="gallery-item" data-gallery-cat="restaurant" data-caption="Restaurant Interior" role="listitem">
+          <img src="images/image15.jpg" alt="Restaurant Interior" loading="lazy">
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <button id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+    <img id="lightbox-img" src="" alt="Enlarged gallery image">
+    <button id="lightbox-next" aria-label="Next image">&#8250;</button>
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <div id="toast" role="alert" aria-live="polite"></div>
+  <button id="scroll-top" aria-label="Scroll to top">&#8679;</button>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>Operating Hours</h3>
+    <h4>Sunday – Thursday <span>11:00 – 22:00</span></h4>
+    <h4>Friday <span>13:00 – 00:00</span></h4>
+    <h4>Saturday <span>11:00 – 00:00</span></h4>
+    <h3>Call: <span>060 322 4155</span></h3>
+    <h3>Address: <span>259 Florida Road, Florida Fields, Windermere, Berea, Durban, 4001</span></h3>
+    <p class="copyright">All rights reserved &copy; Sham Shawarma &amp; Grill</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+  <script>
+    // Gallery category filter
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('[data-gallery-filter]');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const cat = btn.dataset.galleryFilter;
+          document.querySelectorAll('.gallery-item').forEach(item => {
+            item.style.display = (cat === 'all' || item.dataset.galleryCat === cat) ? '' : 'none';
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sham Shawarma & Grill Menu — Shawarma wraps, platters, BBQ, desserts and drinks in Durban.">
+  <meta name="robots" content="index, follow">
+  <title>Menu | Sham Shawarma &amp; Grill</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header>
+    <img src="images/shamlogo2.png" alt="Sham Shawarma & Grill Logo" width="80" height="80">
+    <h2>SHAM SHAWARMA &amp; GRILL</h2>
+    <p>Authentic Middle Eastern Cuisine</p>
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="inquiry.html">Inquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="menu-hero" aria-label="Menu hero">
+      <h1>Our Menu</h1>
+      <p style="color:var(--gray);margin-top:8px;">Fresh, authentic and made to order</p>
+    </section>
+
+    <!-- SEARCH + FILTER CONTROLS -->
+    <div class="menu-controls" role="search" aria-label="Menu search and filter">
+      <input
+        type="search"
+        id="menu-search"
+        placeholder="&#128269; Search menu items..."
+        aria-label="Search menu items"
+        autocomplete="off"
+      >
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="shawarma">Shawarma</button>
+      <button class="filter-btn" data-category="platters">Platters</button>
+      <button class="filter-btn" data-category="bbq">BBQ</button>
+      <button class="filter-btn" data-category="sauces">Sauces</button>
+      <button class="filter-btn" data-category="desserts">Desserts</button>
+      <button class="filter-btn" data-category="drinks">Drinks</button>
+    </div>
+
+    <p id="no-results" class="no-results" role="status">No items match your search.</p>
+
+    <!-- ===== SHAWARMA ===== -->
+    <div class="category-section" data-cat="shawarma">
+      <h2 class="category-title">Shredded Shawarma</h2>
+      <div class="menu-container">
+
+        <article class="menu-item" data-category="shawarma" role="button" tabindex="0" aria-label="View Chicken Shawarma Wrap details">
+          <img src="images/image1f.jpg" class="resize-image" alt="Chicken Shawarma Wrap" loading="lazy">
+          <div class="menu-info">
+            <h4>Chicken Shawarma Wrap</h4>
+            <p>R100</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="shawarma" role="button" tabindex="0" aria-label="View Chicken in a Pita details">
+          <img src="images/image16f.jpg" class="resize-image" alt="Chicken in a Pita" loading="lazy">
+          <div class="menu-info">
+            <h4>Chicken in a Pita</h4>
+            <p>R110</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="shawarma" role="button" tabindex="0" aria-label="View Chicken Single Meal details">
+          <img src="images/image12f.jpg" class="resize-image" alt="Chicken Single Meal" loading="lazy">
+          <div class="menu-info">
+            <h4>Chicken Single Meal</h4>
+            <p>R160</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="shawarma" role="button" tabindex="0" aria-label="View Falafel Wrap details">
+          <img src="images/image21.jpg" class="resize-image" alt="Falafel Wrap" loading="lazy">
+          <div class="menu-info">
+            <h4>Falafel Wrap</h4>
+            <p>R90</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ===== PLATTERS ===== -->
+    <div class="category-section" data-cat="platters">
+      <h2 class="category-title">Platters</h2>
+      <div class="menu-container">
+
+        <article class="menu-item" data-category="platters" role="button" tabindex="0" aria-label="View Chicken Hummus & Shawarma Platter details">
+          <img src="images/image7f.jpg" class="resize-image" alt="Chicken Hummus & Shawarma Platter" loading="lazy">
+          <div class="menu-info">
+            <h4>Chicken Hummus &amp; Shawarma Platter</h4>
+            <p>R170</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="platters" role="button" tabindex="0" aria-label="View Beef Hummus & Shawarma Platter details">
+          <img src="images/image14f.jpg" class="resize-image" alt="Beef Hummus & Shawarma Platter" loading="lazy">
+          <div class="menu-info">
+            <h4>Beef Hummus &amp; Shawarma Platter</h4>
+            <p>R160</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="platters" role="button" tabindex="0" aria-label="View Six Piece Falafel Platter details">
+          <img src="images/image9f.jpg" class="resize-image" alt="Six Piece Falafel Platter" loading="lazy">
+          <div class="menu-info">
+            <h4>Six Piece Falafel Platter</h4>
+            <p>R100</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ===== BBQ ===== -->
+    <div class="category-section" data-cat="bbq">
+      <h2 class="category-title">BBQ Platters</h2>
+      <div class="menu-container">
+
+        <article class="menu-item" data-category="bbq" role="button" tabindex="0" aria-label="View BBQ Platter for Two details">
+          <img src="images/image3f.jpg" class="resize-image" alt="BBQ Platter for Two" loading="lazy">
+          <div class="menu-info">
+            <h4>BBQ Platter for Two</h4>
+            <p>R400</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="bbq" role="button" tabindex="0" aria-label="View Family Platter details">
+          <img src="images/image19f.jpg" class="resize-image" alt="Family Platter" loading="lazy">
+          <div class="menu-info">
+            <h4>Family Platter</h4>
+            <p>R900</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ===== SAUCES ===== -->
+    <div class="category-section" data-cat="sauces">
+      <h2 class="category-title">Sauces &amp; Dips</h2>
+      <div class="menu-container">
+
+        <article class="menu-item" data-category="sauces" role="button" tabindex="0" aria-label="View Hummus details">
+          <img src="images/image23f.jpg" class="resize-image" alt="Hummus" loading="lazy">
+          <div class="menu-info">
+            <h4>Hummus</h4>
+            <p>R50</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="sauces" role="button" tabindex="0" aria-label="View Babaganoush details">
+          <img src="images/image8f.jpg" class="resize-image" alt="Babaganoush" loading="lazy">
+          <div class="menu-info">
+            <h4>Babaganoush</h4>
+            <p>R50</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ===== DESSERTS ===== -->
+    <div class="category-section" data-cat="desserts">
+      <h2 class="category-title">Desserts</h2>
+      <div class="menu-container">
+
+        <article class="menu-item" data-category="desserts" role="button" tabindex="0" aria-label="View Five Piece Baklava details">
+          <img src="images/image6f.jpg" class="resize-image" alt="Five Piece Baklava" loading="lazy">
+          <div class="menu-info">
+            <h4>Five Piece Baklava</h4>
+            <p>R100</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ===== DRINKS ===== -->
+    <div class="category-section" data-cat="drinks">
+      <h2 class="category-title">Drinks</h2>
+      <div class="menu-container">
+
+        <article class="menu-item" data-category="drinks" role="button" tabindex="0" aria-label="View Lemon & Mint details">
+          <img src="images/image17d.jpg" class="resize-image" alt="Lemon & Mint Drink" loading="lazy">
+          <div class="menu-info">
+            <h4>Lemon &amp; Mint</h4>
+            <p>R50</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="drinks" role="button" tabindex="0" aria-label="View Avo, Dates & Almonds details">
+          <img src="images/image20d.jpg" class="resize-image" alt="Avo, Dates & Almonds Drink" loading="lazy">
+          <div class="menu-info">
+            <h4>Avo, Dates &amp; Almonds</h4>
+            <p>R60</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="drinks" role="button" tabindex="0" aria-label="View Chocolate Milkshake details">
+          <img src="images/image22d.jpg" class="resize-image" alt="Chocolate Milkshake" loading="lazy">
+          <div class="menu-info">
+            <h4>Chocolate Milkshake</h4>
+            <p>R60</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <button id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+    <img id="lightbox-img" src="" alt="Enlarged menu item">
+    <button id="lightbox-next" aria-label="Next image">&#8250;</button>
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <div id="toast" role="alert" aria-live="polite"></div>
+  <button id="scroll-top" aria-label="Scroll to top">&#8679;</button>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>Operating Hours</h3>
+    <h4>Sunday – Thursday <span>11:00 – 22:00</span></h4>
+    <h4>Friday <span>13:00 – 00:00</span></h4>
+    <h4>Saturday <span>11:00 – 00:00</span></h4>
+    <h3>Call: <span>060 322 4155</span></h3>
+    <h3>Address: <span>259 Florida Road, Florida Fields, Windermere, Berea, Durban, 4001</span></h3>
+    <p class="copyright">All rights reserved &copy; Sham Shawarma &amp; Grill</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inquire about Sham Shawarma & Grill services, products, catering, volunteering or sponsorship opportunities.">
+  <meta name="robots" content="index, follow">
+  <title>Inquire | Sham Shawarma &amp; Grill</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header>
+    <img src="images/shamlogo2.png" alt="Sham Shawarma & Grill Logo" width="80" height="80">
+    <h2>SHAM SHAWARMA &amp; GRILL</h2>
+    <p>Authentic Middle Eastern Cuisine</p>
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="inquiry.html">Inquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="inquiry-hero" aria-label="Inquiry hero">
+      <h1>Make an Enquiry</h1>
+      <p>Ask about our services, products, catering, volunteering, or sponsorship opportunities.</p>
+    </section>
+
+    <!-- TYPE SELECTION -->
+    <section aria-labelledby="inquiry-type-heading">
+      <h2 id="inquiry-type-heading" style="color:var(--orange);margin-bottom:16px;">What are you enquiring about?</h2>
+      <div class="inquiry-type-grid" role="group" aria-label="Enquiry type selection">
+
+        <div class="inquiry-type-card" data-type="services" role="button" tabindex="0" aria-pressed="false">
+          <div class="icon">&#127869;</div>
+          <h3>Services</h3>
+          <p style="color:var(--gray);font-size:0.82rem;margin-top:6px;">Dine-in, takeaway, catering, delivery</p>
+        </div>
+
+        <div class="inquiry-type-card" data-type="products" role="button" tabindex="0" aria-pressed="false">
+          <div class="icon">&#128293;</div>
+          <h3>Products</h3>
+          <p style="color:var(--gray);font-size:0.82rem;margin-top:6px;">Menu items, platters, prices</p>
+        </div>
+
+        <div class="inquiry-type-card" data-type="volunteer" role="button" tabindex="0" aria-pressed="false">
+          <div class="icon">&#129309;</div>
+          <h3>Volunteer</h3>
+          <p style="color:var(--gray);font-size:0.82rem;margin-top:6px;">Join our community events</p>
+        </div>
+
+        <div class="inquiry-type-card" data-type="sponsor" role="button" tabindex="0" aria-pressed="false">
+          <div class="icon">&#127942;</div>
+          <h3>Sponsorship</h3>
+          <p style="color:var(--gray);font-size:0.82rem;margin-top:6px;">Brand partnership packages</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INQUIRY FORM -->
+    <section class="inquiry-form-card" aria-labelledby="inquiry-form-heading">
+      <h2 id="inquiry-form-heading">Your Details</h2>
+
+      <form id="inquiry-form" novalidate aria-label="Enquiry submission form">
+        <input type="hidden" id="inquiry-type" name="inquiry-type">
+
+        <!-- Always-visible fields -->
+        <div class="form-group">
+          <label for="inq-name">Full Name <span aria-hidden="true" style="color:#e74c3c;">*</span></label>
+          <input type="text" id="inq-name" name="full-name" placeholder="Your full name" required autocomplete="name">
+          <span class="error-msg" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="inq-email">Email Address <span aria-hidden="true" style="color:#e74c3c;">*</span></label>
+          <input type="email" id="inq-email" name="email" placeholder="you@example.com" required autocomplete="email">
+          <span class="error-msg" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="inq-phone">Contact Number <span aria-hidden="true" style="color:#e74c3c;">*</span></label>
+          <input type="tel" id="inq-phone" name="phone" placeholder="e.g. 060 322 4155" required autocomplete="tel">
+          <span class="error-msg" role="alert"></span>
+        </div>
+
+        <!-- Dynamic fields injected by JS based on type selection -->
+        <div id="dynamic-fields" class="dynamic-fields" aria-live="polite"></div>
+
+        <div class="form-group">
+          <label for="inq-message">Additional Message</label>
+          <textarea id="inq-message" name="message" rows="4" placeholder="Any additional details or questions..."></textarea>
+        </div>
+
+        <button type="submit">Submit Enquiry &#10148;</button>
+      </form>
+
+      <!-- Response box — populated by JS after submission -->
+      <div id="inquiry-response" class="inquiry-response" role="status" aria-live="polite" aria-atomic="true"></div>
+    </section>
+
+    <!-- QUICK REFERENCE ACCORDION -->
+    <section aria-labelledby="quick-ref-heading">
+      <h2 id="quick-ref-heading" style="color:var(--orange);margin-bottom:16px;">Quick Reference — Pricing &amp; Availability</h2>
+
+      <div class="accordion" role="list">
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-header" aria-expanded="false">
+            Services Overview <i class="accordion-icon" aria-hidden="true">+</i>
+          </button>
+          <div class="accordion-body" role="region">
+            <p>&#127869; <strong>Dine-In:</strong> No cover charge. Max 6 per table. Tables held 15 min.</p>
+            <p>&#128666; <strong>Takeaway:</strong> Ready in 15–25 min. Minimum order R80.</p>
+            <p>&#127881; <strong>Catering:</strong> From R120/person for groups of 20+.</p>
+            <p>&#128652; <strong>Delivery:</strong> Within 10 km. Fee R25–R50. Min order R120.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-header" aria-expanded="false">
+            Menu Pricing Summary <i class="accordion-icon" aria-hidden="true">+</i>
+          </button>
+          <div class="accordion-body" role="region">
+            <p>&#127859; <strong>Shawarma:</strong> R90 – R160</p>
+            <p>&#127860; <strong>Platters:</strong> R100 – R170</p>
+            <p>&#128293; <strong>BBQ Platters:</strong> R400 – R900</p>
+            <p>&#127852; <strong>Desserts:</strong> From R100</p>
+            <p>&#127863; <strong>Drinks:</strong> From R50</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-header" aria-expanded="false">
+            Volunteer Programme <i class="accordion-icon" aria-hidden="true">+</i>
+          </button>
+          <div class="accordion-body" role="region">
+            <p>Volunteers assist with community food drives and events. You receive free meals during your shift. Minimum commitment: 1 event per month. Submit your interest above and we'll reach out.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-header" aria-expanded="false">
+            Sponsorship Packages <i class="accordion-icon" aria-hidden="true">+</i>
+          </button>
+          <div class="accordion-body" role="region">
+            <p>&#129351; <strong>Bronze — R2,000/month:</strong> Logo on in-store menus and receipts.</p>
+            <p>&#129352; <strong>Silver — R5,000/month:</strong> Logo + social media mentions.</p>
+            <p>&#129351; <strong>Gold — R10,000/month:</strong> Full co-branding on packaging, social media, and events.</p>
+            <p>&#128221; <strong>Custom:</strong> Contact us directly for bespoke arrangements.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="toast" role="alert" aria-live="polite"></div>
+  <button id="scroll-top" aria-label="Scroll to top">&#8679;</button>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>Operating Hours</h3>
+    <h4>Sunday – Thursday <span>11:00 – 22:00</span></h4>
+    <h4>Friday <span>13:00 – 00:00</span></h4>
+    <h4>Saturday <span>11:00 – 00:00</span></h4>
+    <h3>Call: <span>060 322 4155</span></h3>
+    <h3>Address: <span>259 Florida Road, Florida Fields, Windermere, Berea, Durban, 4001</span></h3>
+    <p class="copyright">All rights reserved &copy; Sham Shawarma &amp; Grill</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

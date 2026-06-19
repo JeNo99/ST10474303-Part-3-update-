@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sham Shawarma & Grill — Authentic Middle Eastern cuisine in Durban, South Africa. Fresh shawarma, platters, BBQ and more on Florida Road.">
+  <meta name="keywords" content="shawarma, grill, Middle Eastern, Durban, Florida Road, halal, restaurant">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#111111">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sham Shawarma & Grill">
+  <meta property="og:description" content="Authentic Middle Eastern cuisine in Durban. Fresh shawarma, platters & grill.">
+  <meta property="og:type" content="website">
+  <!-- Preconnect for speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Home | Sham Shawarma & Grill</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Skip Navigation -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header>
+    <img src="images/shamlogo2.png" alt="Sham Shawarma & Grill Logo" width="80" height="80">
+    <h2>SHAM SHAWARMA &amp; GRILL</h2>
+    <p>Authentic Middle Eastern Cuisine</p>
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="inquiry.html">Inquire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero banner">
+      <div class="hero-text">
+        <h1>Welcome to Sham Shawarma &amp; Grill</h1>
+        <p>Where Flavour Meets Tradition</p>
+        <a href="Menu.html" class="hero-cta">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="video-section" aria-label="Restaurant video">
+      <video controls preload="none" poster="images/shamlogo2.png" aria-label="Sham Shawarma promotional video">
+        <source src="images/shamvideo3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- ABOUT SNIPPET -->
+    <section class="about-section" aria-labelledby="home-about-heading">
+      <h2 id="home-about-heading">About Us</h2>
+      <p>
+        Sham Shawarma &amp; Grill is a family-owned restaurant serving authentic Middle Eastern flavours
+        with a focus on expertly grilled meats and savoury shawarma. Known for its fresh ingredients and
+        traditional recipes, Sham Shawarma &amp; Grill offers a delicious and vibrant dining experience,
+        bringing the tastes of the Middle East to your table.
+      </p>
+      <a href="about.html" class="btn" style="margin-top:18px;display:inline-block;">Learn More</a>
+    </section>
+
+    <!-- ANNOUNCEMENTS / DYNAMIC CONTENT -->
+    <section aria-labelledby="announcements-heading">
+      <h2 id="announcements-heading">Latest News &amp; Offers</h2>
+
+      <!-- Filter Tabs -->
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;">
+        <button class="filter-btn announcement-filter active" data-filter="all">All</button>
+        <button class="filter-btn announcement-filter" data-filter="event">Events</button>
+        <button class="filter-btn announcement-filter" data-filter="promo">Promotions</button>
+        <button class="filter-btn announcement-filter" data-filter="product">Products</button>
+        <button class="filter-btn announcement-filter" data-filter="sponsor">Sponsorship</button>
+      </div>
+
+      <div id="announcements-list" class="about-container">
+        <!-- Dynamically loaded via JS -->
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <div class="accordion" role="list">
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-header" aria-expanded="false">
+            Do you offer halal food? <i class="accordion-icon" aria-hidden="true">+</i>
+          </button>
+          <div class="accordion-body" role="region">
+            Yes — all our meats are 100% halal certified. We are committed to providing meals that meet the highest standards of Islamic dietary law.
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-header" aria-expanded="false">
+            Can I make a reservation online? <i class="accordion-icon" aria-hidden="true">+</i>
+          </button>
+          <div class="accordion-body" role="region">
+            Absolutely! Use our <a href="reservation.html" style="color:var(--orange);">Reservation page</a> to book your table online. Tables are available for up to 6 guests.
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-header" aria-expanded="false">
+            Do you offer catering for events? <i class="accordion-icon" aria-hidden="true">+</i>
+          </button>
+          <div class="accordion-body" role="region">
+            Yes! We cater for weddings, corporate events, birthdays, and community gatherings. Packages start at R120 per person for groups of 20 or more. <a href="inquiry.html" style="color:var(--orange);">Submit an inquiry</a> and we'll get back to you within 24 hours.
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-header" aria-expanded="false">
+            What are your operating hours? <i class="accordion-icon" aria-hidden="true">+</i>
+          </button>
+          <div class="accordion-body" role="region">
+            Sunday – Thursday: 11:00 – 22:00 &nbsp;|&nbsp; Friday: 13:00 – 00:00 &nbsp;|&nbsp; Saturday: 11:00 – 00:00
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-header" aria-expanded="false">
+            Can I become a volunteer or sponsor? <i class="accordion-icon" aria-hidden="true">+</i>
+          </button>
+          <div class="accordion-body" role="region">
+            We welcome volunteers for community events and food drives. Sponsorship packages start at R2,000/month. Visit our <a href="inquiry.html" style="color:var(--orange);">Inquiry page</a> to get started.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX (Global) -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <button id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+    <img id="lightbox-img" src="" alt="Enlarged view">
+    <button id="lightbox-next" aria-label="Next image">&#8250;</button>
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scroll-top" aria-label="Scroll to top">&#8679;</button>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>Operating Hours</h3>
+    <h4>Sunday – Thursday <span>11:00 – 22:00</span></h4>
+    <h4>Friday <span>13:00 – 00:00</span></h4>
+    <h4>Saturday <span>11:00 – 00:00</span></h4>
+    <h3>Call: <span>060 322 4155</span></h3>
+    <h3>Address: <span>259 Florida Road, Florida Fields, Windermere, Berea, Durban, 4001</span></h3>
+    <p class="copyright">All rights reserved &copy; Sham Shawarma &amp; Grill</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
